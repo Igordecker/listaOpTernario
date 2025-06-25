@@ -8,7 +8,7 @@ const idade = Number(prompt(`Qual é a sua idade`));
 
     //Processamento
     let mensagem
-(idade <= 18) ? mensagem = `Ainda faltam ${18 - idade} para você atingir naior idade` :
+(idade < 18) ? mensagem = `Ainda faltam ${18 - idade} para você atingir naior idade` :
  mensagem = `você já atingiu a maior idade`
 
 
