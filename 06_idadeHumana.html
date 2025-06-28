@@ -8,11 +8,14 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
-
+const idadeCao = Number (prompt(`Qual é a idade do seu cão`))
+const porteCao = prompt(`Qual é o porte do seu cão`)
     //Processamento
-
-    
+let idadeHumana; 
+(porteCao == `pequeno`) ? idadeHumana = idadeCao * 5 :
+(porteCao == "médio") ? idadeHumana = idadeCao * 6 :
+(porteCao == "grande") ? idadeHumana = idadeCao * 7 :
+alert(`O porte do seu cão é inválido os unicos portes válidos para seu cão são grande, médio ou pequeno`);
     //Saída
-
+document.write(`A idade do seu cão convertida para a humana é de ${idadeHumana}`);
 </script>

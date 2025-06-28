@@ -8,11 +8,14 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+const precoSemAumento = Number (prompt(`Qual é o preço do seu produto?`));
 
     //Processamento
-
-    
+    let precoComAumento 
+(precoSemAumento <= 280) ? precoComAumento = precoSemAumento + precoSemAumento/100*20 : 
+(precoSemAumento <= 700) ? precoComAumento = precoSemAumento + precoSemAumento/100*15 :
+(precoSemAumento <= 1500) ? precoComAumento = precoSemAumento + precoSemAumento/100*10 :  
+precoComAumento = precoSemAumento + precoSemAumento/100*15
     //Saída
-
+document.write(`O preco R$${precoSemAumento} com aumento ficou R$${precoComAumento.toFixed(2)} com o aumento`)
 </script>
