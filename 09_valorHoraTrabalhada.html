@@ -8,11 +8,15 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
-
+let salarioPorHora = Number(prompt(`Informe a quantidade de dinheiro que você ganha por hora trabalhada`));
+const horaTrabalhadas = Number(prompt(`Informe a quantidade de horas trabalhadas por semana`));
     //Processamento
 
-    
-    //Saída
+(horaTrabalhadas <= 45) ? salarioPorHora = salarioPorHora :
+(horaTrabalhadas <= 60) ? salarioPorHora = salarioPorHora + salarioPorHora/100*20 :
+ salarioPorHora = salarioPorHora +salarioPorHora/100*30 
 
+let salariosemanal = salarioPorHora * horaTrabalhadas;
+//Saída
+document.write(`seu salário semanal é de R$${salariosemanal.toFixed(2)} e o salário por hora trabalhada é de R$${salarioPorHora.toFixed(2)}`)
 </script>

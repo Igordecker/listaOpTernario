@@ -6,11 +6,14 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
-
+const precoPerLitroGasolina = Number(prompt(`Informe o preço da gasolina`));
+const litrosGasolina = Number(prompt(`Informe quantidade de gasolina usada diariamente`));
+let precoPeloTransportePublico = Number(prompt(`Informe o preço para usar transporte público diariamente`));
     //Processamento
-
-    
+const precoTotalDeGasolina = litrosGasolina * precoPerLitroGasolina;
+ (precoTotalDeGasolina > precoPeloTransportePublico) ? document.write(`O transporte público é mais barato e custará R$${precoPeloTransportePublico} para ir diariamente ao trbalho`) : 
+ (precoTotalDeGasolina < precoPeloTransportePublico) ? document.write(`O trasporte mais barato é o privado custando R$${precoTotalDeGasolina} por dia`) :
+ document.write(`O preço dos dois transportes são iguais logo tanto faz o transporte escolhido e o valor semanal será de R$${precoPeloTransportePublico}`);
     //Saída
 
     
