@@ -10,11 +10,16 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-
+const salario = Number(prompt(`Informe seu salário mensal`));
+const ContaDeAgua = Number(prompt(`Informe o valor da conta de água`));
+const ContaDeLuz = Number(prompt(`Informe o valor da conta da energia elétrica`));
+const ContaDeTelefone = Number(prompt(`Informe o valor da conta de telefone`));
+const contaMercado = Number(prompt(`Informe o valor da conta do supermercado`));
 
     //Processamento
-
+const restante = salario - contaMercado - ContaDeLuz - ContaDeTelefone - ContaDeAgua;
     
     //Saída
-    
+(restante > 0 ) ? document.write (`O valor que restou das contas foi de R$$${restante}`) :
+document.write (`O valor que faltou para pagar as contas foi de R$$${restante}`) 
 </script>
